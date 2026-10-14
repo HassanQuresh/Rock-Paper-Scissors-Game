@@ -53,8 +53,8 @@ function playGame(playerMove) {
   localStorage.setItem('score', JSON.stringify(score));
   
   document.querySelector('.result').innerHTML = result;
-  document.querySelector('.moves').innerHTML = `You <img src="${playerMove.toLowerCase()}-emoji.png" class="img">
-<img src="${computerMove.toLowerCase()}-emoji.png" class="img"> Computer`;
+  document.querySelector('.moves').innerHTML = `You <img src="/${playerMove.toLowerCase()}-emoji.png" class="img">
+<img src="/${computerMove.toLowerCase()}-emoji.png" class="img"> Computer`;
 
   
   updateScore();
